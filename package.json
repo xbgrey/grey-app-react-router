@@ -1,6 +1,6 @@
 {
   "name": "grey-app-react-router",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": false,
   "dependencies": {
     "grey-message": "^1.0.2",
@@ -55,7 +55,10 @@
     "@types/node": "^10.12.18",
     "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
-    "typescript": "^3.2.2"
+    "typescript": "^3.2.2",
+    "gulp": "^4.0.0",
+    "gulp-typescript": "^5.0.0",
+    "merge2": "^1.2.3"
   },
   "jest": {
     "collectCoverageFrom": [
