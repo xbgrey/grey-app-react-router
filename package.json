@@ -3,7 +3,6 @@
   "version": "0.1.7",
   "private": false,
   "dependencies": {
-    "grey-message": "^1.0.2",
     "autoprefixer": "7.1.6",
     "babel-jest": "20.0.3",
     "babel-loader": "7.1.2",
@@ -17,6 +16,7 @@
     "file-loader": "1.1.5",
     "fork-ts-checker-webpack-plugin": "^0.2.8",
     "fs-extra": "3.0.1",
+    "grey-message": "^1.0.2",
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
     "object-assign": "4.1.1",

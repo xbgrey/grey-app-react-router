@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Route, Redirect, Link, Switch } from 'grey-app-react-router';
+import { Route, Link, Switch } from 'grey-app-react-router';
 import { Component1, Component2, Component3, Component4 } from './Components';
 import './App.css';
 
@@ -17,7 +17,7 @@ class App extends React.Component {
                     <Route path="/b" component={Component2} />
                     <Route path="/c" component={Component3} />
                     <Route path="/d" component={Component4} />
-                    <Route render={() => <Redirect path="/a" />} />
+                    {/* <Route render={() => <Redirect path="/a" />} /> */}
                 </Switch>
             </div>
         );

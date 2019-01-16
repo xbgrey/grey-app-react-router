@@ -28,6 +28,7 @@
     "jest",
     "src/setupTests.ts",
     "config",
-    "gulpfile.js"
+    "gulpfile.js",
+    "bin"
   ]
 }
