@@ -18,6 +18,8 @@
         "object-literal-sort-keys": false,
         "no-console": false,
         "no-debugger": false,
-        "jsx-no-lambda": false
+        "jsx-no-lambda": false,
+        "member-ordering": false,
+        "no-string-literal":false
     }
 }

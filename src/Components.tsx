@@ -1,42 +1,58 @@
 import * as React from 'react';
-import { IComponentProps } from 'grey-app-react-router/Route';
+import { Router } from 'grey-app-react-router';
 
-export class Component1 extends React.PureComponent<IComponentProps> {
+export class Component1 extends React.PureComponent<any> {
     public render() {
         return (
             <div>
-                你的组件1{this.props.location.pathname}
+                你的组件1{Router.history.location.pathname}<input/>
             </div>
         );
     }
-}
 
-export class Component2 extends React.PureComponent<IComponentProps> {
-    public render() {
-        return (
-            <div>
-                你的组件2{this.props.location.pathname}
-            </div>
-        );
+    public componentWillUnmount(){
+        console.log('Component1')
     }
 }
 
-export class Component3 extends React.PureComponent<IComponentProps> {
+export class Component2 extends React.PureComponent<any> {
     public render() {
         return (
             <div>
-                你的组件3{this.props.location.pathname}
+                你的组件2{Router.history.location.pathname}<input/>
             </div>
         );
     }
+
+    public componentWillUnmount(){
+        console.log('Component2')
+    }
 }
 
-export class Component4 extends React.PureComponent<IComponentProps> {
+export class Component3 extends React.PureComponent<any> {
     public render() {
         return (
             <div>
-                你的组件4{this.props.location.pathname}
+                你的组件3{Router.history.location.pathname}<input/>
             </div>
         );
+    }
+
+    public componentWillUnmount(){
+        console.log('Component3')
+    }
+}
+
+export class Component4 extends React.PureComponent<any> {
+    public render() {
+        return (
+            <div>
+                你的组件4{Router.history.location.pathname}<input/>
+            </div>
+        );
+    }
+
+    public componentWillUnmount(){
+        console.log('Component4')
     }
 }
