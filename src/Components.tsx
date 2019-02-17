@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Router } from 'grey-app-react-router';
+import { Router, PageBasis } from 'grey-app-react-router';
 
 export class Component1 extends React.PureComponent<any> {
     public render() {
@@ -15,13 +15,17 @@ export class Component1 extends React.PureComponent<any> {
     }
 }
 
-export class Component2 extends React.PureComponent<any> {
+export class Component2 extends PageBasis<any> {
     public render() {
         return (
             <div>
                 你的组件2{Router.history.location.pathname}<input/>
             </div>
         );
+    }
+
+    public renewRender(){
+        console.log('Component2-renewRender');
     }
 
     public componentWillUnmount(){
