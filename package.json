@@ -1,6 +1,6 @@
 {
   "name": "grey-app-react-router",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "private": false,
   "dependencies": {
     "@types/react": "^16.7.18",
